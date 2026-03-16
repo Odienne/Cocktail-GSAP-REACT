@@ -23,22 +23,26 @@ export const Navbar = () => {
 
     return (
         <nav>
-            <a href="#home" className="flex items-center justify-center gap-2 ">
-                <img src="/images/logo.png" alt="logo"/>
-                <p>Velvet Pour</p>
-            </a>
+            <div>
+                <a href="#home" className="flex items-center gap-2 ">
+                    <img src="/images/logo.png" alt="logo"/>
+                    <p>Velvet Pour</p>
+                </a>
 
-            <ul>
-                {
-                    NAV_LINKS.map((link) => {
-                        return (
-                            <li className="" key={link.id}>
-                                {link.title}
-                            </li>
-                        )
-                    })
-                }
-            </ul>
+                <ul>
+                    {
+                        NAV_LINKS.map((link) => {
+                            return (
+                                <li className="" key={link.id}>
+                                    <a href={"#" + link.id}>
+                                        {link.title}
+                                    </a>
+                                </li>
+                            )
+                        })
+                    }
+                </ul>
+            </div>
         </nav>
     )
 }
