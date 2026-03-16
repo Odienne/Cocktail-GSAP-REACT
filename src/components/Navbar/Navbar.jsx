@@ -1,0 +1,44 @@
+import {NAV_LINKS} from "../../constants/constants.js";
+import {useGSAP} from "@gsap/react";
+import gsap from 'gsap';
+
+
+export const Navbar = () => {
+
+    useGSAP(() => {
+        const navTween = gsap.timeline({
+            scrollTrigger: {
+                trigge: "nav",
+                start: "bottom top"
+            }
+        })
+
+        navTween.fromTo(
+            "nav", {backgroundColor: 'transparent'},
+            {
+                backgroundColor: "#00000050", backgroundFilter: 'blur(10px)',
+                duration: 1, ease: 'power1.inOut'
+            })
+    });
+
+    return (
+        <nav>
+            <a href="#home" className="flex items-center justify-center gap-2 ">
+                <img src="/images/logo.png" alt="logo"/>
+                <p>Velvet Pour</p>
+            </a>
+
+            <ul>
+                {
+                    NAV_LINKS.map((link) => {
+                        return (
+                            <li className="" key={link.id}>
+                                {link.title}
+                            </li>
+                        )
+                    })
+                }
+            </ul>
+        </nav>
+    )
+}
