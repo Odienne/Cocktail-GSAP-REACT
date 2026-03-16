@@ -20,19 +20,21 @@ export const Art = () => {
         })
 
         maskTimeline.to('.will-fade', {
-            opacity: 0, display: 'none', stagger: 0.2, ease: 'power1.inOut',
+            opacity: 0, stagger: 0.2, ease: 'power1.inOut',
         }).to('.masked-img', {
             scale: 1.3, maskPosition: 'center', maskSize: '300%', duration: 1, ease: 'power1.inOut',
-        }).to('#masked-content', {opacity: 1, duration: 1, ease: 'power1.inOut'});
+        }).to('#masked-content', {
+            y: (isMobile ? -160 : -40),
+            opacity: 1, duration: 1, ease: 'power1.inOut'});
     })
 
     return (
         <section id="art">
-            <div className="container mx-auto h-full pt-20">
+            <div className="container mx-auto pt-10 sm:pt-20 md:pt-0">
                 <h2 className="will-fade">Un Art</h2>
 
                 <div className="content">
-                    <ul className="space-y-4 will-fade">
+                    <ul className="space-y-4 will-fade z-1">
                         {
                             GOOD_LIST.map((item, index) => (
                                 <li key={index} className="flex items-center gap-2">
@@ -43,12 +45,12 @@ export const Art = () => {
                         }
                     </ul>
 
-                    <div className="cocktail-img">
+                    <div className="cocktail-img z-0">
                         <img src="/images/under-img.jpg" alt="cocktail mask"
                              className='abs-center masked-img size-full object-contain'/>
                     </div>
 
-                    <ul className="space-y-4 will-fade">
+                    <ul className="space-y-4 will-fade z-1">
                         {
                             FEATURE_LIST.map((feature, index) => (
                                 <li key={index} className="flex items-center justify-start gap-2">
@@ -60,7 +62,7 @@ export const Art = () => {
                     </ul>
                 </div>
 
-                <div className="masked-container">
+                <div className="masked-container z-1 relative">
                     <h2 className="will-fade">
                         Une perfection à savourer
                     </h2>

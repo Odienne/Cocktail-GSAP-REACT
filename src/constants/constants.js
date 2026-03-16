@@ -4,8 +4,8 @@ const NAV_LINKS = [
         id: "about"
     },
     {
-        id: "work",
-        title: "The Art",
+        id: "art",
+        title: "L'art",
     },
     {
         id: "contact",
@@ -106,14 +106,14 @@ const storeInfo = {
     },
 };
 
-const openingHours = [
+const OPENING_HOURS = [
     { day: "Mon–Thu", time: "11:00am – 12am" },
     { day: "Fri", time: "11:00am – 2am" },
     { day: "Sat", time: "9:00am – 2am" },
     { day: "Sun", time: "9:00am – 1am" },
 ];
 
-const socials = [
+const SOCIALS = [
     {
         name: "Instagram",
         icon: "/images/insta.png",
@@ -173,8 +173,8 @@ export {
     profileLists,
     FEATURE_LIST,
     GOOD_LIST,
-    openingHours,
+    OPENING_HOURS,
     storeInfo,
-    socials,
+    SOCIALS,
     COCKTAILS_SLIDER_LIST,
 };

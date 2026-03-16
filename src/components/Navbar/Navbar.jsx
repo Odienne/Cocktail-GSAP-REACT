@@ -34,7 +34,7 @@ export const Navbar = () => {
                     {
                         NAV_LINKS.map((link) => {
                             return (
-                                <li className="" key={link.id}>
+                                <li className="capitalize" key={link.id}>
                                     <a href={"#" + link.id}>
                                         {link.title}
                                     </a>
