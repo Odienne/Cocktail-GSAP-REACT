@@ -66,7 +66,7 @@ export const Hero = () => {
                 currentTime: videoRef.current.duration,
             });
         };
-    }), [];
+    });
 
 
     return (
