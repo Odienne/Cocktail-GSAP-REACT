@@ -41,7 +41,7 @@ const COCKTAILS_LIST = [
     },
 ];
 
-const mockTailLists = [
+const MOCKTAILS_LIST = [
     {
         name: "Tropical Bloom",
         country: "US",
@@ -169,7 +169,7 @@ const sliderLists = [
 export {
     NAV_LINKS,
     COCKTAILS_LIST,
-    mockTailLists,
+    MOCKTAILS_LIST,
     profileLists,
     featureLists,
     goodLists,
