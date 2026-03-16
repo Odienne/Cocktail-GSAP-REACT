@@ -83,14 +83,14 @@ const profileLists = [
     },
 ];
 
-const featureLists = [
+const FEATURE_LIST = [
     "Perfectly balanced blends",
     "Garnished to perfection",
     "Ice-cold every time",
     "Expertly shaken & stirred",
 ];
 
-const goodLists = [
+const GOOD_LIST = [
     "Handpicked ingredients",
     "Signature techniques",
     "Bartending artistry in action",
@@ -171,8 +171,8 @@ export {
     COCKTAILS_LIST,
     MOCKTAILS_LIST,
     profileLists,
-    featureLists,
-    goodLists,
+    FEATURE_LIST,
+    GOOD_LIST,
     openingHours,
     storeInfo,
     socials,
