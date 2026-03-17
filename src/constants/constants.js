@@ -18,99 +18,87 @@ const COCKTAILS_LIST = [
     {
         name: "Chapel Hill Shiraz",
         country: "AU",
-        detail: "Battle",
-        price: "$10",
+        detail: "Bouteille",
+        price: "10 €",
     },
     {
         name: "Caten Malbee",
         country: "AU",
-        detail: "Battle",
-        price: "$49",
+        detail: "Bouteille",
+        price: "49 €",
     },
     {
         name: "Rhino Pale Ale",
         country: "CA",
         detail: "750 ml",
-        price: "$20",
+        price: "20 €",
     },
     {
-        name: "Irish Guinness",
+        name: "Guinness Irlandaise",
         country: "IE",
         detail: "600 ml",
-        price: "$29",
+        price: "29 €",
     },
 ];
 
 const MOCKTAILS_LIST = [
     {
-        name: "Tropical Bloom",
+        name: "Floraison Tropicale",
         country: "US",
-        detail: "Battle",
-        price: "$10",
+        detail: "Bouteille",
+        price: "10 €",
     },
     {
-        name: "Passionfruit Mint",
+        name: "Menthe Fruit de la Passion",
         country: "US",
-        detail: "Battle",
-        price: "$49",
+        detail: "Bouteille",
+        price: "49 €",
     },
     {
-        name: "Citrus Glow",
+        name: "Éclat d'Agrumes",
         country: "CA",
         detail: "750 ml",
-        price: "$20",
+        price: "20 €",
     },
     {
-        name: "Lavender Fizz",
+        name: "Fizz à la Lavande",
         country: "IE",
         detail: "600 ml",
-        price: "$29",
+        price: "29 €",
     },
 ];
 
-const profileLists = [
-    {
-        imgPath: "/images/profile1.png",
-    },
-    {
-        imgPath: "/images/profile2.png",
-    },
-    {
-        imgPath: "/images/profile3.png",
-    },
-    {
-        imgPath: "/images/profile4.png",
-    },
-];
 
 const FEATURE_LIST = [
-    "Perfectly balanced blends",
-    "Garnished to perfection",
-    "Ice-cold every time",
-    "Expertly shaken & stirred",
+    "Assemblages parfaitement équilibrés",
+    "Garnitures réalisées à la perfection",
+    "Toujours bien frais",
+    "Shakés et mélangés avec expertise",
 ];
 
 const GOOD_LIST = [
-    "Handpicked ingredients",
-    "Signature techniques",
-    "Bartending artistry in action",
-    "Freshly muddled flavors",
+    "Ingrédients soigneusement sélectionnés",
+    "Techniques signature",
+    "L’art du bartending en action",
+    "Saveurs fraîchement pilées",
 ];
 
-const storeInfo = {
-    heading: "Where to Find Us",
-    address: "456, Raq Blvd. #404, Los Angeles, CA 90210",
+const STORE_INFO = {
+    heading: "Où nous trouver",
+    subheading: "Visiter notre bar",
+    contactHeading: "Nous contacter",
+    address: "7 rue Charles de Gaulle, 66000 Perpignan",
     contact: {
-        phone: "(555) 987-6543",
-        email: "hello@jsmcocktail.com",
+        phone: "+337 68 15 29 77",
+        email: "contact@digitalis-studio.fr",
     },
 };
 
 const OPENING_HOURS = [
-    { day: "Mon–Thu", time: "11:00am – 12am" },
-    { day: "Fri", time: "11:00am – 2am" },
-    { day: "Sat", time: "9:00am – 2am" },
-    { day: "Sun", time: "9:00am – 1am" },
+    { day: "Lun–Jeu", time: "11h00 – 00h00" },
+    { day: "Ven", time: "11h00 – 02h00" },
+    { day: "Sam", time: "09h00 – 02h00" },
+    { day: "Dim", time: "09h00 – 01h00" },
 ];
 
 const SOCIALS = [
@@ -134,35 +122,35 @@ const SOCIALS = [
 const COCKTAILS_SLIDER_LIST = [
     {
         id: 1,
-        name: "Classic Mojito",
+        name: "Mojito Classique",
         image: "/images/drink1.png",
-        title: "Simple Ingredients, Bold Flavor",
+        title: "Fraîcheur intense et équilibre parfait",
         description:
-            "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
+            "Le Mojito classique associe rhum blanc, citron vert, menthe fraîche et eau pétillante. Un cocktail rafraîchissant et parfaitement équilibré, idéal pour les journées ensoleillées.",
     },
     {
         id: 2,
-        name: "Raspberry Mojito",
+        name: "Mojito Framboise",
         image: "/images/drink2.png",
-        title: "A Zesty Classic That Never Fails",
+        title: "Une touche fruitée irrésistible",
         description:
-            "The Margarita is a classic that balances tangy lime, smooth tequila, and a touch of sweetness. Shaken, frozen, or on the rocks—it’s always crisp & refreshing.",
+            "Le Mojito framboise revisite le classique avec des framboises fraîches pour une note sucrée et acidulée. Léger, fruité et ultra rafraîchissant.",
     },
     {
         id: 3,
-        name: "Violet Breeze",
+        name: "Brise Violette",
         image: "/images/drink3.png",
-        title: "Simple Ingredients, Bold Flavor",
+        title: "Délicat, floral et envoûtant",
         description:
-            "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
+            "La Brise Violette mêle des notes florales subtiles à une base fraîche et légère. Un cocktail élégant, parfait pour une expérience douce et raffinée.",
     },
     {
         id: 4,
-        name: "Curacao Mojito",
+        name: "Mojito Curaçao",
         image: "/images/drink4.png",
-        title: "Crafted With Care, Poured With Love",
+        title: "Exotique et vibrant",
         description:
-            "Each cocktail is made with fresh ingredients and a passion for perfecting every pour, whether you're celebrating or simply relaxing.",
+            "Le Mojito Curaçao apporte une touche tropicale avec sa liqueur bleue aux notes d’agrumes. Une version colorée et originale du grand classique.",
     },
 ];
 
@@ -170,11 +158,10 @@ export {
     NAV_LINKS,
     COCKTAILS_LIST,
     MOCKTAILS_LIST,
-    profileLists,
     FEATURE_LIST,
     GOOD_LIST,
     OPENING_HOURS,
-    storeInfo,
+    STORE_INFO,
     SOCIALS,
     COCKTAILS_SLIDER_LIST,
 };

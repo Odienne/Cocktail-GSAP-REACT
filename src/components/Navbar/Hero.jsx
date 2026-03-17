@@ -1,6 +1,6 @@
 import {useGSAP} from "@gsap/react";
 import gsap from 'gsap';
-import {SplitText} from 'gsap/all';
+import {SplitText, ScrollTrigger} from 'gsap/all';
 import {useRef} from "react";
 import {useMediaQuery} from "react-responsive";
 
@@ -49,7 +49,9 @@ export const Hero = () => {
         //video animation
 
         const startValue = isMobile ? 'top 50%' : 'center 60%';
-        const endValue = isMobile ? '120% top' : 'bottom top';
+        const endValue = isMobile ? '130% top' : 'bottom top';
+
+        gsap.ticker.lagSmoothing(0);
 
         let tl = gsap.timeline({
             scrollTrigger: {
@@ -65,6 +67,7 @@ export const Hero = () => {
             tl.to(videoRef.current, {
                 currentTime: videoRef.current.duration,
             });
+            ScrollTrigger.refresh()
         };
     });
 
