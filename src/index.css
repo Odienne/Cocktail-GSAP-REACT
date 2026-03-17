@@ -185,7 +185,8 @@ body {
     }
 
     #about {
-        @apply min-h-screen py-28 container mx-auto lg:px-4 px-5;
+        @apply min-h-screen py-28 container mx-auto lg:px-4 px-5 relative z-10;
+        background-color: #050111;
 
         .content {
             @apply grid grid-cols-1 lg:grid-cols-12 gap-5;
@@ -360,7 +361,7 @@ body {
         }
 
         .content {
-            @apply container mx-auto lg:py-14 2xl:py-32 py-16 flex flex-col justify-between gap-10 min-h-dvh;
+            @apply container mx-auto lg:pt-14 2xl:pt-32 pt-16 flex flex-col justify-between gap-10 min-h-dvh pb-8 lg:pb-6;
 
             h2 {
                 @apply lg:text-6xl 2xl:text-8xl text-5xl font-modern-negra md:translate-y-0 translate-y-5;
@@ -371,7 +372,7 @@ body {
             }
 
             p {
-                @apply lg:text-2xl 2xl:text-3xl text-sm;
+                @apply lg:text-2xl text-sm;
             }
         }
 
