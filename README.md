@@ -1,16 +1,76 @@
-# React + Vite
+# 🍸 Cocktails‑RED — Template interactif pour bars
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Cocktails‑RED** est un **template web moderne destiné aux bars et restaurants** pour mettre en avant leur menu, leurs cocktails, et leur savoir-faire. Le design est **immersif et interactif**, avec des animations fluides et innovantes réalisées avec **GSAP**.
 
-Currently, two official plugins are available:
+Ce template permet de créer une **expérience premium pour les visiteurs**, en combinant **vidéos de fond, sliders de cocktails, animations de texte**, et sections interactives pour présenter les spécialités du bar.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🎯 Objectif du projet
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Fournir un **template clé-en-main** pour sites de bars/restaurants
+- Mettre en valeur le **menu de cocktails et mocktails**
+- Créer une **expérience visuelle immersive** grâce à des animations modernes
+- Inspirer les visiteurs avec une **navigation fluide et interactive**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Fonctionnalités principales
+
+- **Section Hero dynamique** avec vidéo de fond animée
+- **Sliders de cocktails et mocktails** avec noms, descriptions et prix
+- **Animations de texte et éléments graphiques** avec GSAP et ScrollTrigger
+- **Menu interactif** pour présenter les boissons et ingrédients
+- **Design responsive** pour mobile, tablette et desktop
+- **Effets parallax et transitions élégantes**
+
+---
+
+## 🛠 Technologies utilisées
+
+| Technologie | Usage |
+|-------------|-------|
+| **React** | Composants UI réutilisables |
+| **Tailwind CSS** | Styles et design responsive |
+| **GSAP + ScrollTrigger** | Animations interactives au scroll |
+| **Vercel** | Hébergement et déploiement |
+| **JavaScript** | Logique front-end et animations |
+
+---
+
+## 📦 Installation en local
+
+1. Cloner le dépôt :
+```bash
+git clone https://github.com/ton-compte/cocktails-red.git
+```
+
+2. Installer les dépendances
+```bash
+npm install
+```
+
+3. Lancer le serveur de test
+```bash
+npm run dev
+```
+
+
+## 🚀 Animations et UX
+
+GSAP + ScrollTrigger pour animer texte et éléments au scroll
+
+SplitText pour des effets de titres stylisés
+
+Vidéos de fond animées qui réagissent au scroll
+
+Transitions fluides et parallaxes pour un effet immersif
+
+
+## 📱 Responsive et mobile-friendly
+
+Mise en page adaptée à tous les écrans
+
+Scroll fluide sur mobile et tablette
+
+Optimisation des vidéos et animations pour mobile
