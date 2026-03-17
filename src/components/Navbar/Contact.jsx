@@ -11,7 +11,7 @@ export const Contact = () => {
 
         const timeline = gsap.timeline({
             scrollTrigger: {
-                trigger: '#contact', start: 'top top',
+                trigger: '#contact', start: 'top 80%',
             }, ease: "power1.inOut"
         })
 
@@ -24,7 +24,7 @@ export const Contact = () => {
 
         const parallaxTimeline = gsap.timeline({
             scrollTrigger: {
-                trigger: '#contact', start: 'top top'
+                trigger: '#contact', start: 'top 80%'
             }
         })
 
