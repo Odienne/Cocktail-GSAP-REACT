@@ -361,7 +361,7 @@ body {
         }
 
         .content {
-            @apply container mx-auto lg:pt-14 2xl:pt-32 pt-16 flex flex-col justify-between gap-10 min-h-dvh pb-8 lg:pb-6;
+            @apply container mx-auto lg:pt-14 2xl:pt-32 pt-30 flex flex-col justify-between gap-10 min-h-dvh pb-8 lg:pb-6;
 
             h2 {
                 @apply lg:text-6xl 2xl:text-8xl text-5xl font-modern-negra md:translate-y-0 translate-y-5;
