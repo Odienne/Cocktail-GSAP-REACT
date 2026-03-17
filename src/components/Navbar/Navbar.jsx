@@ -8,7 +8,7 @@ export const Navbar = () => {
     useGSAP(() => {
         const navTween = gsap.timeline({
             scrollTrigger: {
-                trigge: "nav",
+                trigger: "nav",
                 start: "bottom top"
             }
         })
