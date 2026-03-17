@@ -53,7 +53,7 @@ export const About = () => {
 
                     <div className="sub-content">
                         <p>
-                            Chaque cocktail que nous servont reflète notre obsession pour la perfection.
+                            Chaque cocktail que nous servons reflète notre obsession pour la perfection.
                             C'est ce qui rend cette expérience unique et inoubliable.
                         </p>
 
